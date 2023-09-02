@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 
-export const FriendItem = styled('li')(({isOnline}) => {
+export const FriendItem = styled('li')(({ $isOnline }) => {
   return {
     display: 'flex',
     alignItems: 'center',
@@ -15,7 +15,7 @@ export const FriendItem = styled('li')(({isOnline}) => {
       width: 15,
       height: 15,
       borderRadius: '50%',
-      backgroundColor: isOnline ? 'green' : 'red',
+      backgroundColor: $isOnline ? 'green' : 'red',
     },
     '& img': {
       width: 60,
